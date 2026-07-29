@@ -6,7 +6,97 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Current Weather</h1>
+    <header>
+      <input
+        type="search"
+        placeholder="Enter a city.."
+        id="city-input"
+        required
+      />
+      <input type="submit" name="city" id="city-output" />
+    </header>
+    <main>
+      <div>
+        <h1 class="current-city">City</h1>
+        <h2>Weekday Day Month</h2>
+      </div>
+      <div>
+        100°F <br />
+        Sunny
+      </div>
+      <div class="current-stats">
+        <div class="current-high">
+          110°F <br />
+          HIGH
+        </div>
+        <div class="current-low">
+          89°F <br />
+          LOW
+        </div>
+        <div class="current-wind">
+          7mpd <br />
+          WIND
+        </div>
+        <div class="current-rain">
+          0% <br />
+          RAIN
+        </div>
+        <div class="sunrise-time">
+          5:27<br />
+          SUNRISE
+        </div>
+        <div class="sunset-time">
+          8:27<br />
+          SUNSET
+        </div>
+      </div>
+      <div class="future-days">
+        <h3 class="future-days-header">Next 5 days</h3>
+        <div class="forecast-container">
+          <div class="forecast-day">
+            <div class="day-name">Mon</div>
+            <div class="day-logo">IMG</div>
+            <div class="temp-range">
+              <div class="day-temp-low">89°F</div>
+              <div class="day-temp-high">/110°F</div>
+            </div>
+          </div>
+          <div class="forecast-day">
+            <div class="day-name">Tue</div>
+            <div class="day-logo">IMG</div>
+            <div class="temp-range">
+              <div class="day-temp-low">89°F</div>
+              <div class="day-temp-high">/110°F</div>
+            </div>
+          </div>
+          <div class="forecast-day">
+            <div class="day-name">Wed</div>
+            <div class="day-logo">IMG</div>
+            <div class="temp-range">
+              <div class="day-temp-low">89°F</div>
+              <div class="day-temp-high">/110°F</div>
+            </div>
+          </div>
+          <div class="forecast-day">
+            <div class="day-name">Thu</div>
+            <div class="day-logo">IMG</div>
+            <div class="temp-range">
+              <div class="day-temp-low">89°F</div>
+              <div class="day-temp-high">/110°F</div>
+            </div>
+          </div>
+          <div class="forecast-day">
+            <div class="day-name">Fri</div>
+            <div class="day-logo">IMG</div>
+            <div class="temp-range">
+              <div class="day-temp-low">89°F</div>
+              <div class="day-temp-high">/110°F</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <footer>
       Coded by
       <a href="https://github.com/rinathouin" target="_blank"
