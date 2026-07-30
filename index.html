@@ -3,113 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <form id="search-form">
-        <input
-          type="search"
-          placeholder="Enter a city.."
-          id="city-input"
-          required
-        />
-        <input type="submit" value="Search" id="city-output" />
-      </form>
-    </header>
-    <main>
-      <div class="sub-header">
-        <h1 class="current-city">City</h1>
-        <h2>Weekday Day Month</h2>
-        <div class="units-button">
-          <button class="units-setting" id="switch-units">Celsius</button>
-        </div>
-      </div>
-      <div class="current-temperature">100°F</div>
-      <div class="temperature-label">Sunny</div>
-      <div class="current-stats">
-        <div class="current-temp-range">
-          <div class="current-temp-low">89°F</div>
-          <div class="current-temp-high">/110°F</div>
-        </div>
-        <div class="current-wind-card">
-          <div class="current-wind">7mph</div>
-          <div class="wind-label">WIND</div>
-        </div>
-        <div class="current-rain-card">
-          <div class="current-rain">0%</div>
-          <div class="rain-label">RAIN</div>
-        </div>
-        <div class="current-sun-range">
-          <div class="sun-card">
-            <div class="sun-time">5:30</div>
-            <div class="sun-label">SUNRISE</div>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            class="search-form-input"
+            type="search"
+            placeholder="Enter a city.."
+            id="city-input"
+            required
+          />
+          <button
+            class="search-form-button"
+            type="submit"
+            id="search-btn"
+            aria-label="Search"
+          >
+            🔍
+          </button>
+        </form>
+      </header>
+      <main>
+        <div class="sub-header">
+          <div class="locations-details">
+            <h1 class="city-name">City</h1>
+            <h2 class="current-date">Weekday Day Month</h2>
           </div>
-          <div class="sun-card">
-            <div class="sun-time">8:30</div>
-            <div class="sun-label">SUNSET</div>
+          <div class="current-temperature-container">
+            <div class="current-temp-logo">☀️</div>
+            <div class="current-temperature">100</div>
+            <div class="current-temp-units">°F</div>
           </div>
         </div>
-      </div>
-      <div class="future-days">
-        <h3 class="future-days-header">Next 5 days</h3>
-        <div class="forecast-container">
-          <div class="forecast-day">
-            <div class="day-name">Mon</div>
-            <div class="day-logo">IMG</div>
-            <div class="temp-range">
-              <div class="day-temp-low">89°F</div>
-              <div class="day-temp-high">/110°F</div>
-            </div>
-          </div>
-          <div class="forecast-day">
-            <div class="day-name">Tue</div>
-            <div class="day-logo">IMG</div>
-            <div class="temp-range">
-              <div class="day-temp-low">89°F</div>
-              <div class="day-temp-high">/110°F</div>
-            </div>
-          </div>
-          <div class="forecast-day">
-            <div class="day-name">Wed</div>
-            <div class="day-logo">IMG</div>
-            <div class="temp-range">
-              <div class="day-temp-low">89°F</div>
-              <div class="day-temp-high">/110°F</div>
-            </div>
-          </div>
-          <div class="forecast-day">
-            <div class="day-name">Thu</div>
-            <div class="day-logo">IMG</div>
-            <div class="temp-range">
-              <div class="day-temp-low">89°F</div>
-              <div class="day-temp-high">/110°F</div>
-            </div>
-          </div>
-          <div class="forecast-day">
-            <div class="day-name">Fri</div>
-            <div class="day-logo">IMG</div>
-            <div class="temp-range">
-              <div class="day-temp-low">89°F</div>
-              <div class="day-temp-high">/110°F</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+        <p class="weather-details">
+          Sunny <br />
+          Humidity: <strong class="humidity">15%</strong>, Wind:
+          <strong class="speed">7mph</strong>
+        </p>
+      </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/rinathouin" target="_blank"
-        >Cesarina Lucarelli</a
-      >, is open-source on
-      <a href="https://github.com/rinathouin/WeatherApp" target="_blank">
-        GitHub</a
-      >
-      and hosted on
-      <a href="https://currentweatherapp2026.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/rinathouin" target="_blank"
+          >Cesarina Lucarelli</a
+        >, is open-source on
+        <a href="https://github.com/rinathouin/WeatherApp" target="_blank">
+          GitHub</a
+        >
+        and hosted on
+        <a href="https://currentweatherapp2026.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>

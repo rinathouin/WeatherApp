@@ -1,0 +1,139 @@
+body {
+  background: #faf9f6;
+  color: #110b06;
+  font-family: "Merriweather", serif;
+  margin: 0;
+}
+
+.weather-app {
+  background: rgba(244, 162, 97, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(230, 174, 128, 0.3);
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(244, 162, 97, 0.15);
+  color: #110b06;
+}
+.city-name,
+.current-date,
+.current-temperature {
+  color: #110b06;
+  font-weight: bold;
+}
+.current-stats {
+  color: rgba(17, 11, 6, 0.7);
+}
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  width: 100%;
+}
+.location-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.city-name {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #110b06;
+  margin: 0;
+  line-height: 1.2;
+}
+.current-date {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(17, 11, 6, 0.7);
+  margin: 0;
+}
+.current-temperature-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.current-temp-logo {
+  font-size: 50px;
+  margin-top: 0;
+  line-height: 1;
+}
+.current-temperature {
+  font-family: "Open Sans", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  color: #110b06;
+  line-height: 0.85;
+}
+.current-temp-units {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #110b06;
+  align-self: flex-start;
+  margin-top: 6px;
+}
+a {
+  color: #f4a261;
+}
+header {
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.search-form-input {
+  background: #faf9f6;
+  font-family: "Merriweather", serif;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  width: 80%;
+  margin-left: 30px;
+}
+.search-form-button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.search-form-button:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
+.search-form-button:active {
+  transform: scale(0.95);
+}
+.humidity,
+.speed {
+  color: #04525a;
+}
+p {
+  line-height: 1.5;
+}
+footer {
+  padding: 35px 0 0 0;
+  font-size: 12px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
