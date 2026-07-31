@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -36,12 +37,12 @@
       <main>
         <div class="sub-header">
           <div class="locations-details">
-            <h1 class="city-name">City</h1>
+            <h1 class="city-name" id="city">City</h1>
             <h2 class="current-date">Weekday Day Month</h2>
           </div>
           <div class="current-temperature-container">
             <div class="current-temp-logo">☀️</div>
-            <div class="current-temperature">100</div>
+            <div class="current-temperature" id="current-temp">100</div>
             <div class="current-temp-units">°F</div>
           </div>
         </div>

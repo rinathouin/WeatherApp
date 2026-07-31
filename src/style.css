@@ -1,5 +1,5 @@
 body {
-  background: rgba(244, 162, 97, 0.25);
+  background: rgba(176, 212, 222, 0.3);
   color: #110b06;
   font-family: "Merriweather", serif;
   margin: 0;
@@ -80,7 +80,7 @@ body {
   margin-top: 6px;
 }
 a {
-  color: #f4a261;
+  color: #b0d4de;
 }
 header {
   justify-content: space-between;
