@@ -26,12 +26,14 @@ body {
   color: rgba(17, 11, 6, 0.7);
 }
 .sub-header {
-  display: flex;
+  display: flex !important;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 30px;
-  margin-top: 40px;
+  align-items: center;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 30px;
+  padding-top: 20px;
 }
 .location-details {
   display: flex;
@@ -53,16 +55,21 @@ body {
   gap: 5px;
 }
 .current-temp-logo {
-  font-size: 50px;
   margin-top: 0;
-  line-height: 1;
+  display: flex;
+}
+.current-temp-logo img {
+  width: 67px;
+  height: 67px;
+  display: block;
+  object-fit: contain;
 }
 .current-temperature {
   font-family: "Open Sans", sans-serif;
   font-size: 70px;
   font-weight: 700;
   color: #110b06;
-  line-height: 0.85;
+  line-height: 0.9;
 }
 .current-temp-units {
   font-family: "Open Sans", sans-serif;
@@ -72,6 +79,7 @@ body {
   align-self: flex-start;
   margin-top: 6px;
 }
+
 a {
   color: rgba(140, 169, 177, 1);
 }
