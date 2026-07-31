@@ -1,12 +1,12 @@
 body {
-  background: #faf9f6;
+  background: rgba(244, 162, 97, 0.25);
   color: #110b06;
   font-family: "Merriweather", serif;
   margin: 0;
 }
 
 .weather-app {
-  background: rgba(244, 162, 97, 0.25);
+  background: #faf9f6;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(230, 174, 128, 0.3);
   max-width: 600px;
@@ -88,7 +88,7 @@ header {
 }
 
 .search-form-input {
-  background: #faf9f6;
+  background: rgba(244, 162, 97, 0.25);
   font-family: "Merriweather", serif;
   border: none;
   border-radius: 8px;
