@@ -53,31 +53,32 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
+  margin-right: 27px;
 }
 .current-temp-logo {
-  margin-top: 0;
+  margin-top: 5px;
   display: flex;
 }
 .current-temp-logo img {
-  width: 67px;
-  height: 67px;
+  width: 75px;
+  height: 75px;
   display: block;
   object-fit: contain;
 }
 .current-temperature {
   font-family: "Open Sans", sans-serif;
-  font-size: 70px;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 650;
   color: #110b06;
   line-height: 0.9;
 }
 .current-temp-units {
   font-family: "Open Sans", sans-serif;
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 29px;
+  font-weight: 550;
   color: #110b06;
   align-self: flex-start;
-  margin-top: 6px;
+  margin-top: 14px;
 }
 
 a {
@@ -90,7 +91,7 @@ header {
 
 .search-form-input {
   background: rgba(176, 212, 222, 0.2);
-  font-family: "Merriweather", serif;
+  font-family: "Open Sans", sans-serif;
   border: none;
   border-radius: 8px;
   padding: 15px;
@@ -107,14 +108,15 @@ header {
   align-items: center;
   justify-content: center;
 
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   font-size: 25px;
   cursor: pointer;
 
   transition:
     transform 0.2s ease,
     opacity 0.2s ease;
+  vertical-align: middle;
 }
 
 .search-form-button:hover {
